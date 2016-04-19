@@ -1,0 +1,327 @@
+/* CSS Document */
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic);
+
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+* { 
+	box-sizing: border-box;
+	/*border: 1px solid black !important;*/
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Droid Serif', serif;
+	background-color: black;
+	background-size:cover; 
+	overflow-x: hidden;
+	
+}
+
+a { 
+	text-decoration: none;
+}
+
+
+/* navigation*/
+
+header {
+	width: 100%;
+	height:120px;
+	overflow: hidden;
+/*	border-bottom: 1px solid #FFF;*/
+	
+	position: fixed;
+	top: 0;
+	
+	z-index: 999;
+}
+
+.nav {
+	width: 100%;
+	height: 120px;
+	overflow: hidden;
+	/*background-color: red;*/
+	margin: auto;
+	padding: 30px;
+	
+	position:fixed;
+	right:0;
+
+	
+}
+
+.logo,
+ul#menu {
+	display:inline-block;
+	vertical-align: center;
+
+}
+
+/*logo*/
+.logo {
+	width: 80px;
+	height: 80px;
+	/*background-color: #DBAFB0;*/
+}
+
+
+/*navigation list items*/
+
+ul#menu {
+	margin: 15px 25px;
+	padding: 5px;
+	/*background-color: blue;*/
+	position: absolute;
+	right:0;
+
+}
+
+ul#menu li {
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	
+	margin-left: 3px;
+	/*background-color: red;*/
+	
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	text-transform:uppercase;
+	text-align: center;
+	line-height: 35px;
+}
+
+ul#menu li:first-child {
+	width: 75px;
+	backrgound-color: red;
+}/*design*/
+
+ul#menu li:nth-child(2) {
+	width: 100px;
+}/*photography*/
+
+ul#menu li:nth-child(3) {
+	width: 95px;
+	border-right: 1px solid #FFF;
+} /*contact*/
+
+
+ul#menu li:nth-child (4) {
+	width: 25px;
+}
+
+ul#menu li:last-child {
+	width:40px;
+	
+}/*linkedin & behance*/
+
+.fa.fa-behance,
+.fa.fa-linkedin {
+	font-size: 20px;
+	line-height: 10px !important;
+}
+
+
+/*nav links*/
+
+ul li a{
+	display: block;
+}
+
+ul li a:visited {
+	color: #FFF;
+}
+
+ul li a:link {
+	color: #FFF;
+}
+
+
+ul li a:hover {
+	color: #F02D32;
+}
+
+/*main space*/
+
+.main-space {
+	width: 100%;
+	height:100px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+/*	background-color: #DBAFB0;*/
+}
+
+/*contents*/
+.main {
+	width: 100%;
+	height:auto;
+	
+	padding-left:175px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+	
+	position: relative;
+}
+
+
+.title {
+	width:195px;
+	height: 50px;
+	
+	position: absolute;
+	left: 170px;
+	top: 75px;
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	color: #F02D32;
+	line-height: 50px;
+	text-transform: uppercase;
+	text-align: center;
+	
+	z-index: 1;
+}
+
+html, body {
+	height: 100%;
+}
+
+.wrap {
+	overflow:hidden;
+	padding-left: 200px;
+
+}
+
+.box {
+	width: 20%;
+	padding-bottom: 20%;
+	margin: 3px;
+	
+	/*background-color: blue;*/
+	color: #fff;
+	
+	position: relative;
+	float:left;
+}
+
+.inner-box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	/*background-color: #fff;*/
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.inner-box img {
+	max-width: 145%;
+	max-height: 100%;
+	
+}
+
+
+.inner-box img:hover{
+	opacity: 0.5;
+}
+
+/*lightbox */
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 6%;
+	overflow: scroll;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+
+.img_scroll {
+	width: 500px;
+	height: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+	margin: 0 auto;	
+	margin-bottom: 100px;
+}
+
+
+.img_scroll::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+.img_scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #333;
+}
+ 
+.img_scroll::-webkit-scrollbar-thumb {
+  background-color: #F02D32;
+  border-radius: 10px;
+
+}
+
+.img_scroll p {
+	width: 400px;
+	height: 25px;
+	margin: 0 auto;
+}
+
+.img_scroll p:first-child {
+	margin: 0 auto;
+	margin-top: 20px;
+	font-family: 'Droid Serif', serif;
+	font-style:bold;
+	font-size: 12px;
+	line-height: 20px;
+	color: white;
+}
+
+.img_scroll p:nth-child(2){
+	font-family: 'Droid Serif', serif;
+	font-style:italic;
+	font-size: 12px;
+	line-height: 20px;
+	color: white;
+}
+
+/*footer*/
+footer {
+	width: auto;
+	height: 100px;
+	margin: 0 auto;
+	
+	font-size: 10px;
+	color: #FFF; 
+	text-align: center;
+	line-height: 100px;
+}
